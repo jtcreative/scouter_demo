@@ -8,12 +8,19 @@
 
 /* Begin PBXBuildFile section */
 		18B073D8204D17700045A408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073D7204D17700045A408 /* AppDelegate.swift */; };
-		18B073DA204D17700045A408 /* FirstViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073D9204D17700045A408 /* FirstViewController.swift */; };
-		18B073DC204D17710045A408 /* SecondViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073DB204D17710045A408 /* SecondViewController.swift */; };
+		18B073DA204D17700045A408 /* PlayerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073D9204D17700045A408 /* PlayerSearchViewController.swift */; };
+		18B073DC204D17710045A408 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073DB204D17710045A408 /* TeamViewController.swift */; };
 		18B073DF204D17710045A408 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B073DD204D17710045A408 /* Main.storyboard */; };
 		18B073E1204D17710045A408 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 18B073E0204D17710045A408 /* Assets.xcassets */; };
 		18B073E4204D17710045A408 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 18B073E2204D17710045A408 /* LaunchScreen.storyboard */; };
 		18B073EF204D17710045A408 /* ScouterTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073EE204D17710045A408 /* ScouterTests.swift */; };
+		18B073FA204D17F20045A408 /* BookmarksViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073F9204D17F20045A408 /* BookmarksViewController.swift */; };
+		18B073FD204D25A80045A408 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073FC204D25A80045A408 /* Player.swift */; };
+		18B07401204D2C140045A408 /* ScoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B07400204D2C140045A408 /* ScoutService.swift */; };
+		18B07406204D5ECE0045A408 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B07405204D5ECE0045A408 /* Team.swift */; };
+		18B07408204D71480045A408 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B07407204D71480045A408 /* PlayerDetailViewController.swift */; };
+		4BA2D632ECF2B3B3B403991B /* Pods_ScouterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3130CCC3A1A600D1BB09433 /* Pods_ScouterTests.framework */; };
+		E11569ED0DAF8F206001CE12 /* Pods_Scouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D71889584BEB7377B10946 /* Pods_Scouter.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -29,8 +36,8 @@
 /* Begin PBXFileReference section */
 		18B073D4204D17700045A408 /* Scouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B073D7204D17700045A408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
-		18B073D9204D17700045A408 /* FirstViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FirstViewController.swift; sourceTree = "<group>"; };
-		18B073DB204D17710045A408 /* SecondViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SecondViewController.swift; sourceTree = "<group>"; };
+		18B073D9204D17700045A408 /* PlayerSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSearchViewController.swift; sourceTree = "<group>"; };
+		18B073DB204D17710045A408 /* TeamViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamViewController.swift; sourceTree = "<group>"; };
 		18B073DE204D17710045A408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		18B073E0204D17710045A408 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		18B073E3204D17710045A408 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
@@ -38,6 +45,17 @@
 		18B073EA204D17710045A408 /* ScouterTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ScouterTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B073EE204D17710045A408 /* ScouterTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScouterTests.swift; sourceTree = "<group>"; };
 		18B073F0204D17710045A408 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		18B073F9204D17F20045A408 /* BookmarksViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookmarksViewController.swift; sourceTree = "<group>"; };
+		18B073FC204D25A80045A408 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		18B07400204D2C140045A408 /* ScoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutService.swift; sourceTree = "<group>"; };
+		18B07405204D5ECE0045A408 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		18B07407204D71480045A408 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		34D71889584BEB7377B10946 /* Pods_Scouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		84C4B68DEB13416351F56B74 /* Pods-Scouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scouter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scouter/Pods-Scouter.release.xcconfig"; sourceTree = "<group>"; };
+		A1659A825BF4DDDD10E0529E /* Pods-ScouterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScouterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScouterTests/Pods-ScouterTests.release.xcconfig"; sourceTree = "<group>"; };
+		A793242DFCCB20C28B16439D /* Pods-ScouterTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScouterTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-ScouterTests/Pods-ScouterTests.debug.xcconfig"; sourceTree = "<group>"; };
+		C3130CCC3A1A600D1BB09433 /* Pods_ScouterTests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_ScouterTests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		EC035C4EC242A9A43B8B1E12 /* Pods-Scouter.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scouter.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Scouter/Pods-Scouter.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -45,6 +63,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				E11569ED0DAF8F206001CE12 /* Pods_Scouter.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -52,6 +71,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4BA2D632ECF2B3B3B403991B /* Pods_ScouterTests.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -64,6 +84,8 @@
 				18B073D6204D17700045A408 /* Scouter */,
 				18B073ED204D17710045A408 /* ScouterTests */,
 				18B073D5204D17700045A408 /* Products */,
+				B825F13A98CD291541959FA5 /* Pods */,
+				8A2E68609C98DF4540F94F77 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -79,9 +101,10 @@
 		18B073D6204D17700045A408 /* Scouter */ = {
 			isa = PBXGroup;
 			children = (
+				18B073FF204D2BE70045A408 /* ViewControllers */,
+				18B073FE204D2BDE0045A408 /* Services */,
+				18B073FB204D25870045A408 /* Models */,
 				18B073D7204D17700045A408 /* AppDelegate.swift */,
-				18B073D9204D17700045A408 /* FirstViewController.swift */,
-				18B073DB204D17710045A408 /* SecondViewController.swift */,
 				18B073DD204D17710045A408 /* Main.storyboard */,
 				18B073E0204D17710045A408 /* Assets.xcassets */,
 				18B073E2204D17710045A408 /* LaunchScreen.storyboard */,
@@ -99,6 +122,54 @@
 			path = ScouterTests;
 			sourceTree = "<group>";
 		};
+		18B073FB204D25870045A408 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				18B073FC204D25A80045A408 /* Player.swift */,
+				18B07405204D5ECE0045A408 /* Team.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		18B073FE204D2BDE0045A408 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				18B07400204D2C140045A408 /* ScoutService.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		18B073FF204D2BE70045A408 /* ViewControllers */ = {
+			isa = PBXGroup;
+			children = (
+				18B073F9204D17F20045A408 /* BookmarksViewController.swift */,
+				18B073DB204D17710045A408 /* TeamViewController.swift */,
+				18B073D9204D17700045A408 /* PlayerSearchViewController.swift */,
+				18B07407204D71480045A408 /* PlayerDetailViewController.swift */,
+			);
+			path = ViewControllers;
+			sourceTree = "<group>";
+		};
+		8A2E68609C98DF4540F94F77 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				34D71889584BEB7377B10946 /* Pods_Scouter.framework */,
+				C3130CCC3A1A600D1BB09433 /* Pods_ScouterTests.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		B825F13A98CD291541959FA5 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				EC035C4EC242A9A43B8B1E12 /* Pods-Scouter.debug.xcconfig */,
+				84C4B68DEB13416351F56B74 /* Pods-Scouter.release.xcconfig */,
+				A793242DFCCB20C28B16439D /* Pods-ScouterTests.debug.xcconfig */,
+				A1659A825BF4DDDD10E0529E /* Pods-ScouterTests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -106,9 +177,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18B073F3204D17710045A408 /* Build configuration list for PBXNativeTarget "Scouter" */;
 			buildPhases = (
+				0FED890DEA295D6CFB2E8370 /* [CP] Check Pods Manifest.lock */,
 				18B073D0204D17700045A408 /* Sources */,
 				18B073D1204D17700045A408 /* Frameworks */,
 				18B073D2204D17700045A408 /* Resources */,
+				AA19E8373E5428E85535E2E2 /* [CP] Embed Pods Frameworks */,
+				77046EC9C25E0CFE79DC50C5 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -123,9 +197,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 18B073F6204D17710045A408 /* Build configuration list for PBXNativeTarget "ScouterTests" */;
 			buildPhases = (
+				3F1B20983F78DE1A1CA7A6A1 /* [CP] Check Pods Manifest.lock */,
 				18B073E6204D17710045A408 /* Sources */,
 				18B073E7204D17710045A408 /* Frameworks */,
 				18B073E8204D17710045A408 /* Resources */,
+				BDD6D81117BF8F2F6739DA89 /* [CP] Embed Pods Frameworks */,
+				9259523B94AC05550C315754 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -197,14 +274,123 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		0FED890DEA295D6CFB2E8370 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Scouter-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		3F1B20983F78DE1A1CA7A6A1 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-ScouterTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		77046EC9C25E0CFE79DC50C5 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scouter/Pods-Scouter-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		9259523B94AC05550C315754 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScouterTests/Pods-ScouterTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AA19E8373E5428E85535E2E2 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${SRCROOT}/Pods/Target Support Files/Pods-Scouter/Pods-Scouter-frameworks.sh",
+				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Scouter/Pods-Scouter-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		BDD6D81117BF8F2F6739DA89 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-ScouterTests/Pods-ScouterTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		18B073D0204D17700045A408 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				18B073DC204D17710045A408 /* SecondViewController.swift in Sources */,
+				18B073FA204D17F20045A408 /* BookmarksViewController.swift in Sources */,
+				18B073DC204D17710045A408 /* TeamViewController.swift in Sources */,
+				18B07406204D5ECE0045A408 /* Team.swift in Sources */,
 				18B073D8204D17700045A408 /* AppDelegate.swift in Sources */,
-				18B073DA204D17700045A408 /* FirstViewController.swift in Sources */,
+				18B07408204D71480045A408 /* PlayerDetailViewController.swift in Sources */,
+				18B073FD204D25A80045A408 /* Player.swift in Sources */,
+				18B07401204D2C140045A408 /* ScoutService.swift in Sources */,
+				18B073DA204D17700045A408 /* PlayerSearchViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -355,34 +541,39 @@
 		};
 		18B073F4204D17710045A408 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = EC035C4EC242A9A43B8B1E12 /* Pods-Scouter.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7446HJY5B4;
 				INFOPLIST_FILE = Scouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yankees.Scouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Debug;
 		};
 		18B073F5204D17710045A408 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 84C4B68DEB13416351F56B74 /* Pods-Scouter.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 7446HJY5B4;
 				INFOPLIST_FILE = Scouter/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.yankees.Scouter;
 				PRODUCT_NAME = "$(TARGET_NAME)";
-				SWIFT_VERSION = 4.0;
+				SWIFT_VERSION = 3.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
 		};
 		18B073F7204D17710045A408 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A793242DFCCB20C28B16439D /* Pods-ScouterTests.debug.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
@@ -399,6 +590,7 @@
 		};
 		18B073F8204D17710045A408 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = A1659A825BF4DDDD10E0529E /* Pods-ScouterTests.release.xcconfig */;
 			buildSettings = {
 				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
 				BUNDLE_LOADER = "$(TEST_HOST)";
