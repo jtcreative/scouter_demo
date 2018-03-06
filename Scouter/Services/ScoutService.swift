@@ -14,6 +14,8 @@ public protocol ScoutServiceListener {
     func scoutListenerOnPlayersSearchReceived(players: [Player?])
     func scoutListenerOnPlayerReceived(player: Player?)
     func scoutListenerOnTeamsReceived(teams: [Team?])
+    func scoutListenerOnPlayerStatsReceived(playerStats: PlayerStat)
+    func scoutListenerOnTeamRosterReceived(players: [Player?])
 }
 
 public class ScoutService {
@@ -78,7 +80,23 @@ extension ScoutService {
         }
     }
     
-    private func createPlayerList(json: JSON) -> [Player?]? {
+    public func getPlayerStats(playerId: Int) {
+        let url = baseUrl + "/player/\(playerId)/stats"
+        Alamofire.request(url, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                let playerStats = PlayerStat.build(json: json)
+                self.delegate?.scoutListenerOnPlayerStatsReceived(playerStats: playerStats)
+                print("JSON: \(json)")
+            case .failure(let error):
+                print(error)
+            }
+        }
+        
+    }
+    
+    func createPlayerList(json: JSON) -> [Player?]? {
         if let array = (json.array?.map {  return Player.build(json: $0) }) {
             return array
         }
@@ -105,7 +123,19 @@ extension ScoutService {
         }
     }
     
-    public func getTeamRouster() {
-
+    public func getTeamRoster(teamId: Int) {
+        let url = baseUrl + "/team/\(teamId)/roster"
+        Alamofire.request(url, method: .get).validate().responseJSON { response in
+            switch response.result {
+            case .success(let value):
+                let json = JSON(value)
+                if let players = self.createPlayerList(json: json) {
+                    self.delegate?.scoutListenerOnTeamRosterReceived(players: players)
+                }
+                print("JSON: \(json)")
+            case .failure(let error):
+                print(error)
+            }
+        }
     }
 }

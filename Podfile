@@ -3,6 +3,7 @@
 
 target 'Scouter' do
   pod 'Alamofire'
+  pod 'AlamofireImage'
   pod 'SwiftyJSON'
   use_frameworks!
 

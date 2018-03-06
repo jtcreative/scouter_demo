@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		18883A13204EBF830011D9AB /* TeamRosterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18883A12204EBF830011D9AB /* TeamRosterViewController.swift */; };
 		18B073D8204D17700045A408 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073D7204D17700045A408 /* AppDelegate.swift */; };
 		18B073DA204D17700045A408 /* PlayerSearchViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073D9204D17700045A408 /* PlayerSearchViewController.swift */; };
 		18B073DC204D17710045A408 /* TeamViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B073DB204D17710045A408 /* TeamViewController.swift */; };
@@ -19,6 +20,9 @@
 		18B07401204D2C140045A408 /* ScoutService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B07400204D2C140045A408 /* ScoutService.swift */; };
 		18B07406204D5ECE0045A408 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B07405204D5ECE0045A408 /* Team.swift */; };
 		18B07408204D71480045A408 /* PlayerDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B07407204D71480045A408 /* PlayerDetailViewController.swift */; };
+		18B0740A204E188F0045A408 /* PlayerStats.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B07409204E188F0045A408 /* PlayerStats.swift */; };
+		18B0740C204E19080045A408 /* StatsForYear.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0740B204E19080045A408 /* StatsForYear.swift */; };
+		18B0740E204E1A7B0045A408 /* Level.swift in Sources */ = {isa = PBXBuildFile; fileRef = 18B0740D204E1A7B0045A408 /* Level.swift */; };
 		4BA2D632ECF2B3B3B403991B /* Pods_ScouterTests.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = C3130CCC3A1A600D1BB09433 /* Pods_ScouterTests.framework */; };
 		E11569ED0DAF8F206001CE12 /* Pods_Scouter.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 34D71889584BEB7377B10946 /* Pods_Scouter.framework */; };
 /* End PBXBuildFile section */
@@ -34,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		18883A12204EBF830011D9AB /* TeamRosterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TeamRosterViewController.swift; sourceTree = "<group>"; };
 		18B073D4204D17700045A408 /* Scouter.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Scouter.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		18B073D7204D17700045A408 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		18B073D9204D17700045A408 /* PlayerSearchViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerSearchViewController.swift; sourceTree = "<group>"; };
@@ -50,6 +55,9 @@
 		18B07400204D2C140045A408 /* ScoutService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScoutService.swift; sourceTree = "<group>"; };
 		18B07405204D5ECE0045A408 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
 		18B07407204D71480045A408 /* PlayerDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerDetailViewController.swift; sourceTree = "<group>"; };
+		18B07409204E188F0045A408 /* PlayerStats.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlayerStats.swift; sourceTree = "<group>"; };
+		18B0740B204E19080045A408 /* StatsForYear.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsForYear.swift; sourceTree = "<group>"; };
+		18B0740D204E1A7B0045A408 /* Level.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Level.swift; sourceTree = "<group>"; };
 		34D71889584BEB7377B10946 /* Pods_Scouter.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_Scouter.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		84C4B68DEB13416351F56B74 /* Pods-Scouter.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Scouter.release.xcconfig"; path = "Pods/Target Support Files/Pods-Scouter/Pods-Scouter.release.xcconfig"; sourceTree = "<group>"; };
 		A1659A825BF4DDDD10E0529E /* Pods-ScouterTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ScouterTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-ScouterTests/Pods-ScouterTests.release.xcconfig"; sourceTree = "<group>"; };
@@ -127,6 +135,9 @@
 			children = (
 				18B073FC204D25A80045A408 /* Player.swift */,
 				18B07405204D5ECE0045A408 /* Team.swift */,
+				18B07409204E188F0045A408 /* PlayerStats.swift */,
+				18B0740B204E19080045A408 /* StatsForYear.swift */,
+				18B0740D204E1A7B0045A408 /* Level.swift */,
 			);
 			path = Models;
 			sourceTree = "<group>";
@@ -146,6 +157,7 @@
 				18B073DB204D17710045A408 /* TeamViewController.swift */,
 				18B073D9204D17700045A408 /* PlayerSearchViewController.swift */,
 				18B07407204D71480045A408 /* PlayerDetailViewController.swift */,
+				18883A12204EBF830011D9AB /* TeamRosterViewController.swift */,
 			);
 			path = ViewControllers;
 			sourceTree = "<group>";
@@ -349,11 +361,13 @@
 			inputPaths = (
 				"${SRCROOT}/Pods/Target Support Files/Pods-Scouter/Pods-Scouter-frameworks.sh",
 				"${BUILT_PRODUCTS_DIR}/Alamofire/Alamofire.framework",
+				"${BUILT_PRODUCTS_DIR}/AlamofireImage/AlamofireImage.framework",
 				"${BUILT_PRODUCTS_DIR}/SwiftyJSON/SwiftyJSON.framework",
 			);
 			name = "[CP] Embed Pods Frameworks";
 			outputPaths = (
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/Alamofire.framework",
+				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/AlamofireImage.framework",
 				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/SwiftyJSON.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -384,8 +398,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				18B073FA204D17F20045A408 /* BookmarksViewController.swift in Sources */,
+				18B0740E204E1A7B0045A408 /* Level.swift in Sources */,
+				18883A13204EBF830011D9AB /* TeamRosterViewController.swift in Sources */,
 				18B073DC204D17710045A408 /* TeamViewController.swift in Sources */,
+				18B0740C204E19080045A408 /* StatsForYear.swift in Sources */,
 				18B07406204D5ECE0045A408 /* Team.swift in Sources */,
+				18B0740A204E188F0045A408 /* PlayerStats.swift in Sources */,
 				18B073D8204D17700045A408 /* AppDelegate.swift in Sources */,
 				18B07408204D71480045A408 /* PlayerDetailViewController.swift in Sources */,
 				18B073FD204D25A80045A408 /* Player.swift in Sources */,

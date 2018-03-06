@@ -33,7 +33,11 @@ class TeamViewController: UIViewController {
 
 extension TeamViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        let storyboard = UIStoryboard(name: "Main", bundle: nil)
+        let teamRosterController = storyboard.instantiateViewController(withIdentifier: "TeamRosterViewController") as! TeamRosterViewController
+        teamRosterController.team = teams?[indexPath.row]
         
+        self.navigationController?.pushViewController(teamRosterController, animated: true)
     }
 }
 
@@ -46,7 +50,7 @@ extension TeamViewController : UITableViewDataSource {
         return teamArray.count
     }
     
-    func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+    public func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let team = teams?[indexPath.row] as Team?
         
         let city = team?.City as! String
@@ -60,6 +64,10 @@ extension TeamViewController : UITableViewDataSource {
 }
 
 extension TeamViewController : ScoutServiceListener {
+    func scoutListenerOnPlayerStatsReceived(playerStats: PlayerStat) {
+        
+    }
+    
     func scoutListenerOnTeamsReceived(teams: [Team?]) {
         self.teams = teams
         tableView?.reloadData()
@@ -77,4 +85,7 @@ extension TeamViewController : ScoutServiceListener {
         
     }
     
+    func scoutListenerOnTeamRosterReceived(players: [Player?]) {
+        
+    }
 }

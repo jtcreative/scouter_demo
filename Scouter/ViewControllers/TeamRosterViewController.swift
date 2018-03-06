@@ -1,56 +1,49 @@
 //
-//  FirstViewController.swift
+//  TeamRosterViewController.swift
 //  Scouter
 //
-//  Created by James Timberlake on 3/5/18.
+//  Created by James Timberlake on 3/6/18.
 //  Copyright © 2018 James Timberlake. All rights reserved.
 //
 
 import UIKit
 
-class PlayerSearchViewController: UIViewController {
+class TeamRosterViewController: UIViewController {
     
     @IBOutlet weak var tableView : UITableView?
+    @IBOutlet weak var teamLabel : UILabel?
     
     var service : ScoutService?
-    var players: [Player?]?
+    
+    var team : Team?
+    public var players: [Player?]?
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        teamLabel?.text = team?.FullName
         // Do any additional setup after loading the view, typically from a nib.
         service = ScoutService(scoutDelegate: self)
+        service?.getTeamRoster(teamId: (team?.TeamID)!)
     }
-
+    
     override func didReceiveMemoryWarning() {
         super.didReceiveMemoryWarning()
         // Dispose of any resources that can be recreated.
     }
-
-
+    
 }
 
-extension PlayerSearchViewController : UISearchBarDelegate {
-    func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        guard searchText.count >= 4 else {
-            return
-        }
-        
-        service?.searchForPlayers(query: searchText)
-    }
-}
-
-extension PlayerSearchViewController : UITableViewDelegate {
+extension TeamRosterViewController : UITableViewDelegate {
     func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
         let storyboard = UIStoryboard(name: "Main", bundle: nil)
         let playerDetailController = storyboard.instantiateViewController(withIdentifier: "PlayerDetailViewController") as! PlayerDetailViewController
         playerDetailController.player = players?[indexPath.row]
         
         self.navigationController?.pushViewController(playerDetailController, animated: true)
-
     }
 }
 
-extension PlayerSearchViewController : UITableViewDataSource {
+extension TeamRosterViewController : UITableViewDataSource {
     
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
         guard let playerArray = players else {
@@ -58,7 +51,7 @@ extension PlayerSearchViewController : UITableViewDataSource {
         }
         return playerArray.count
     }
-
+    
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let player = players?[indexPath.row] as Player?
         
@@ -74,31 +67,29 @@ extension PlayerSearchViewController : UITableViewDataSource {
     }
 }
 
-extension PlayerSearchViewController : ScoutServiceListener {
-    func scoutListenerOnPlayerStatsReceived(playerStats: PlayerStat) {
-        
-    }
-
-    
-    func scoutListenerOnTeamsReceived(teams: [Team?]) {
-        
-    }
-    
+extension TeamRosterViewController : ScoutServiceListener {
     func scoutListenerOnAllPlayersReceived(players: [Player?]) {
-        self.players = players
-        tableView?.reloadData()
+        
     }
     
     func scoutListenerOnPlayersSearchReceived(players: [Player?]) {
-        self.players = players
-        tableView?.reloadData()
+        
     }
     
     func scoutListenerOnPlayerReceived(player: Player?) {
         
     }
-
-    func scoutListenerOnTeamRosterReceived(players: [Player?]) {
+    
+    func scoutListenerOnTeamsReceived(teams: [Team?]) {
         
+    }
+    
+    func scoutListenerOnPlayerStatsReceived(playerStats: PlayerStat) {
+        
+    }
+    
+    func scoutListenerOnTeamRosterReceived(players: [Player?]) {
+        self.players = players
+        tableView?.reloadData()
     }
 }
